@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Algorithm Schedul</title>
+    </head>
+    
+    <body>
+        <div class="BGbody"></div>
+        <div class="wrapper">
+
+            <section class="header">
+                    <h3> Aplikasi Penerapan Algoritma Penjadwalan </h3>
+                    <table align="center">
+                        <tr>
+                            <td>Input Nilai</td> <td> : <input type="text" id="nilaiInput" placeholder="Contoh 12 35 60 69 70">  </td>
+                        </tr>
+                        <tr>
+                            <td>Head </td> <td> : <input type="text" id="nilaiHead" placeholder="Contoh : 100"> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <button id="renderBtn" onclick="fungsiUtama()">
+                                    Submit
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                
+            </section>
+
+            <!-- section tampil chart FIFO -->
+            <section class="chart-fifo">
+                <div class="chart-container">
+                        <canvas id="fifoChart" class="fifo-chart-place"></canvas>
+                </div>
+            </section>
+
+            <!-- Section tampil chart Scan -->
+            <section class="chart-scan">
+                <div class="chart-container">
+                        <canvas id="scanChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Section tampil chart c-Scan -->
+            <section class="chart-cscan">
+                <div class="chart-container">
+                        <canvas id="cscanChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Section tampil chart SSTF -->
+            <section class="chart-sstf">
+                <div class="chart-container">
+                        <canvas id="sstfChart"></canvas>
+                </div>
+            </section>
+        </div>
+        
+
+        <script src="./lib/Chart.js"></script>
+        <script src="./lib/jquery.min.js"></script>
+        <script src="./algorithm/schedulingAlgo.js"></script>
+    </body>
+
+
+</html>
